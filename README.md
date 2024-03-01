@@ -15,7 +15,7 @@ The plan for this hands-on session:
 
 ## Prerequisites
 
-We don't assume any familiarity with mathlib/lean.
+We don't assume any familiarity with Lean/mathlib.
 However, you will need some way to run Lean on your computer.
 There are different options:
 
