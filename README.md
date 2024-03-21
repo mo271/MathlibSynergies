@@ -25,6 +25,15 @@ There are different options:
 
  If you are new to Lean/mathlib, a fun way to begin is by playing the [the natural number game](https://adam.math.hhu.de/)!
 
+In order to start with the files in this repo, you install lean on your computer (see link above)
+you clone this repo and run
+```shell
+lake exe cache get
+lake build
+code .
+```
+The last step only opens vscode in case you want to use that.
+
 
 ## Resources
 
