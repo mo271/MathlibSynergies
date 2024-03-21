@@ -43,6 +43,7 @@ Docs, Tutorials, search engines
  - [Mathematics in Lean tutorial](https://leanprover-community.github.io/mathematics_in_lean/)
  - [Moogle: Semantic search over mathlib4](https://www.moogle.ai/)
  - [Loogle searches of Lean and Mathlib definitions and theorems.](https://loogle.lean-lang.org/)
+ - [abbreviations.json](https://github.com/leanprover/vscode-lean4/blob/master/vscode-lean4/src/abbreviation/abbreviations.json) for a list of symbols one can get by typing `\` in vscode.
 
 Example projects:
 
