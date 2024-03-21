@@ -26,3 +26,6 @@ theorem square_diff_nonneg (a b : ℤ) : 0 ≤ a ^ 2 - 2 * a * b + b ^ 2 := by
 -- hint: use `Nat.ofDigits_mod 10 3 (Nat.digits 10 n)`
 theorem three_divisibility_rule (n : ℕ) : 3 ∣ n ↔ 3 ∣ (Nat.digits 10 n).sum := by
   sorry
+
+theorem euclid : ∀ n : ℕ, ∃ p : ℕ, p.Prime ∧ n < p := by
+  sorry
