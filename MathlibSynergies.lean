@@ -6,4 +6,4 @@ import «MathlibSynergies».InductionExamples
 import «MathlibSynergies».LeanAsProgrammingLanguage
 import «MathlibSynergies».PerfectNumbers
 import «MathlibSynergies».PropositionalExamples
-import «MathlibSynergies».TensorRestrictions.lean
+import «MathlibSynergies».TensorRestrictions
