@@ -15,3 +15,5 @@ import Mathlib
 #eval Nat.digits 10 123456
 
 #eval Nat.digits 123456 10
+
+#eval 1/(1 - 2) + 1 = 1
