@@ -21,7 +21,8 @@ There are different options:
 
  - *The best way*: [Install lean on your computer](https://leanprover-community.github.io/get_started.html)
  - *The fast way*: [Try lean online](https://live.lean-lang.org/)
- - *Another way*: [Use gitpod](https://gitpod.io/new/#/https://github.com/mo271/MathlibSynergies)
+ - *Another way*: [Use gitpod](https://gitpod.io/new/#/https://github.com/mo271/MathlibSynergies) (currently needs quite some time to start-up, so not recommended. For some reason it can't get the cache, so needs to build the entire mathlib)
+
 
  If you are new to Lean/mathlib, a fun way to begin is by playing the [the natural number game](https://adam.math.hhu.de/)!
 
