@@ -43,4 +43,19 @@ theorem three_divisibility_rule (n : ℕ) : 3 ∣ n ↔ 3 ∣ (Nat.digits 10 n).
   rw [Nat.ofDigits_digits 10 n]
 
 theorem euclid : ∀ n : ℕ, ∃ p : ℕ, p.Prime ∧ n < p := by
-  sorry
+  intro n
+  let m := Nat.factorial n + 1
+  set q := m.minFac
+  use q
+  have h_q_prime : q.Prime := by
+    refine' Nat.minFac_prime _
+    have : 0 <  Nat.factorial n := Nat.factorial_pos n
+    linarith
+  refine' ⟨h_q_prime, _⟩
+  · by_contra hnq
+    have : q ∣ Nat.factorial n := by
+      rw [not_lt] at hnq
+      exact (Nat.Prime.dvd_factorial h_q_prime).mpr hnq
+    have hqm : q ∣ m := by exact Nat.minFac_dvd m
+    have h_q_div_one : q ∣ 1 := by exact (Nat.dvd_add_iff_right this).mpr hqm
+    exact Nat.Prime.not_dvd_one h_q_prime h_q_div_one
